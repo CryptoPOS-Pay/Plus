@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paiement avec CryptoPOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/logo_cryptopos.png" alt="Logo CryptoPOS" class="logo">
+        <h1 id="title">Paiement avec CryptoPOS</h1>
+        <label for="amount" id="label-amount">Montant en EUR / CHF / USD</label>
+        <input type="number" id="amount" placeholder="10">
+        <div id="converted"></div>
+        <label for="crypto" id="label-crypto">Crypto</label>
+        <select id="crypto">
+            <option value="ethereum">Ethereum</option>
+            <option value="polygon">Polygon</option>
+            <option value="bnb">BNB</option>
+            <option value="dai">DAI</option>
+            <option value="usdc">USDC</option>
+        </select>
+        <input type="text" id="to" placeholder="Adresse du commerçant">
+        <button id="pay">Envoyer</button>
+        <p id="connect-msg">Connectez votre portefeuille pour procéder au paiement</p>
+        <img src="assets/logo_metamask.png" alt="MetaMask" class="metamask">
+        <p id="browser-msg">Navigateur recommandé :</p>
+        <div class="browsers">
+            <img src="assets/logo_chrome.webp" alt="Chrome">
+            <img src="assets/logo_mozilla.webp" alt="Firefox">
+            <img src="assets/logo_edge.webp" alt="Edge">
+        </div>
+        <p class="secure"><span id="secure-msg">🛡 Paiement 100 % sécurisé via la blockchain</span> 🔒</p>
+    </div>
+</body>
+</html>
