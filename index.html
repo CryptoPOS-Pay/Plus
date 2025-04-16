@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paiement CryptoPOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="logo_cryptopos.png" alt="CryptoPOS Logo" class="logo">
+        <h2>Paiement avec CryptoPOS</h2>
+        <label>Montant en EUR</label>
+        <input type="number" id="amount-eur" placeholder="10">
+        
+        <label>Crypto</label>
+        <select id="crypto-select">
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="USDT">Tether (USDT)</option>
+            <option value="USDC">USD Coin (USDC)</option>
+            <option value="DAI">Dai (DAI)</option>
+            <option value="MATIC">Polygon (MATIC)</option>
+            <option value="BNB">BNB</option>
+        </select>
+
+        <div id="converted-amount">≈ 0.000 ETH</div>
+        
+        <label>Adresse du commerçant</label>
+        <input type="text" id="merchant-address" value="0xD0050f2acfecE80f3e26d80Cc2D6D066e7878574">
+        
+        <button id="pay-button">Envoyer</button>
+        <p>Connectez votre portefeuille pour procéder au paiement</p>
+        <img src="logo_metamask.png" alt="MetaMask" class="icon">
+        <p>Navigateur recommandé :</p>
+        <div class="browsers">
+            <img src="logo_mozilla.webp" class="icon">
+            <img src="logo_chrome.webp" class="icon">
+            <img src="logo_edge.webp" class="icon">
+        </div>
+        <p class="secure">Paiement 100 % sécurisé via la blockchain 🔒</p>
+    </div>
+</body>
+</html>

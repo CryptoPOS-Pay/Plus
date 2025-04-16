@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #f9f9f9; }
+.container { margin: 50px auto; padding: 20px; background: white; width: 90%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.logo { width: 80px; margin-bottom: 20px; }
+.icon { width: 40px; margin: 5px; }
+input, select { width: 100%; padding: 10px; margin: 10px 0; }
+button { padding: 10px 20px; background: green; color: white; border: none; border-radius: 5px; cursor: pointer; }
+.secure { color: green; font-weight: bold; }
